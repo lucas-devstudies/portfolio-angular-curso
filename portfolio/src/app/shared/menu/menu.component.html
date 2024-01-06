@@ -1,6 +1,20 @@
 <div>
     <ul>
-        <li><a href="/"></a></li>
-        <li><a href="/portfolio"></a></li>
+        <li>
+            <a 
+                [routerLink]="['/']"
+                [routerLinkActive]="['activated']"
+                [routerLinkActiveOptions]="{exact:true}"> <!--Usamos para definir que a rota deve ser exatamente daquela forma-->
+                HOME
+            </a>
+        </li>                          <!--Usamos routerlink para mudar a rota sem fazer reflash da página-->
+        <li>
+            <a 
+                [routerLink]="['/portfolio']"
+                [routerLinkActive]="['activated']"
+                [routerLinkActiveOptions]="{exact:true}"> <!--Usamos para definir que a rota deve ser exatamente daquela forma-->
+                PORTFOLIO
+            </a>
+        </li>
     </ul>
 </div>
